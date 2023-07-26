@@ -21,14 +21,17 @@
   
   }
   
-  .mdl a{
+  .mdl a {
     margin-left: 190px;
     margin-top: 20px;
     font-size: 25px;
     color: #000000;
-    
-  
   }
+
+ 
+  
+  
+  
 .foto1 {
     border-radius: 15px;
     margin-top: -5px;
@@ -209,11 +212,12 @@
     padding: 10px;
     height: 90px;
     border-radius: 20px;
+    background-color: white;
 }
 
 .Nav {
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: 375px;
 }
 
 
@@ -351,7 +355,7 @@
     background-color: black; 
   }
 
-.btn2 {
+/* .btn2 {
     border: none;
     padding: 10px 20px;
     width: 450px;
@@ -363,11 +367,83 @@
     font-weight: bold;
     font-size: 25px;
 }
-.lp {
+.dropdown-container {
     margin-top: 90px;
     margin-left: 260px;
 }
 
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 5px;
+    width: 900px;
+    background-color: red;
+    z-index: 1;
+  } */
+
+  .btn2 {
+    border: none;
+    padding: 12px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #558DD3;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 50px;
+    position: absolute;
+    top: 40px;
+    left: 190px;
+   
+    
+  }
+  
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .dropdown-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    border-radius: 5px;
+    width: 900px;
+    background-color: red;
+    z-index: 1;
+  
+    
+  }
+
+  .saf{
+    margin-top: 60px;
+  }
+
+
+  .pl{
+    position: absolute;
+    top: 38px;
+    left: -589.8px;
+  }
+
+  
 .bya {
     margin-top: 60px;
     margin-left: 100px;

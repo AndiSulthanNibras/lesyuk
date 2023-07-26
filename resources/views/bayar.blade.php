@@ -13,8 +13,8 @@
         <div class="card">
             <div class="mdl">
                 <i class="fa-solid fa-medal"></i>
-                <a class="fa-sharp fa-regular fa-heart"></a>
-              </div>
+                <a class="fa fa-sharp fa-regular fa-heart" id="heart-icon"></a>
+            </div>
             <img class="foto1" src="img/org1.png" alt="">
             <div class="card-content">
               <h1>ALAN</h1>
@@ -63,9 +63,8 @@
        
         <div class="Nav">
             <a href="#"><img class="img1" src="img/gopay.png" alt=""></a>
-            <a href="#"><img class="img1" src="img/gopay.png" alt=""></a>
-            <a href="#"><img class="img1" src="img/gopay.png" alt=""></a>
-            <a href="#"><img class="img1" src="img/gopay.png" alt=""></a>
+            <a href="#"><img class="img1" src="img/ovo2.png" alt=""></a>
+            <a href="#"><img class="img1" src="img/bri.png" alt=""></a>
         </div>
     </div>
 
@@ -94,44 +93,72 @@
                     </div>
                 </div>
 
-                <div class="lp">
-                    <a href="/bayar" class="btn2">Bayar dengan Gopay</a>
+                <div class="dropdown-container">
+                    <a class="btn2" id="dropdown-btn">Bayar dengan Gopay</a>
+                    <p class="saf"></p>
+                    <ul class="dropdown-list" id="dropdown-list">
+                      <li class="pl">
+
+                        <div class="horizontal-line"></div>
+                        <div class="row">
+                            <div class="column">
+                              <h2 class="bya">Biaya Registasi</h2>
+                              <p class="nm">Rp 50.000</p>
+                
+                              <h2 class="bya1">Biaya Les Privat</h2>
+                              <p class="nm1">Rp 120.000</p>   
+                            </div>
+                           <div>
+                            <img class="img3" src="img/qr.png" alt="">
+                           </div>
+                          
+                        </div>
+                        <div class="horizontal-line1"></div>
+                        <div class="row">
+                            <div >
+                                <h2 class="total">Total: Rp 170.000</h2>
+                              
+                            </div>
+                            <div class="bt">
+                                <a href="/bayar" class="btn3">Pembayaran Selesai</a>
+                            </div>
+                        </div>
+
+
+
+                      </li>
+                         
+            
                 </div>
                 
             </div>
         </div>
-        <div class="horizontal-line"></div>
-        <div class="row">
-            <div class="column">
-              <h2 class="bya">Biaya Registasi</h2>
-              <p class="nm">Rp 50.000</p>
 
-              <h2 class="bya1">Biaya Les Privat</h2>
-              <p class="nm1">Rp 120.000</p>   
-            </div>
-           <div>
-            <img class="img3" src="img/qr.png" alt="">
-           </div>
-          
-        </div>
-        <div class="horizontal-line1"></div>
-        <div class="row">
-            <div >
-                <h2 class="total">Total: Rp 170.000</h2>
-              
-            </div>
-            <div class="bt">
-                <a href="/bayar" class="btn3">Pembayaran Selesai</a>
-            </div>
-        </div>
 
     </div>
+
+   
 
     
 
  
     
-       
+    
+    <script >
+        const dropdownBtn = document.getElementById('dropdown-btn');
+        const dropdownList = document.getElementById('dropdown-list');
+
+        dropdownBtn.addEventListener('click', function() {
+        dropdownList.style.display = dropdownList.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', function(event) {
+        if (!dropdownList.contains(event.target) && event.target !== dropdownBtn) {
+            dropdownList.style.display = 'none';
+        }
+        });
+
+      </script>
     
     
 </body>
