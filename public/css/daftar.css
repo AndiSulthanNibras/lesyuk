@@ -12,13 +12,14 @@
 
 .file-label {
   margin-top: 30px;
-  text-align: center;    
+  text-align: center; 
+  justify-items: center;   
   font-weight: bold;
   display: inline-block;
-  height: 50px;
-  width: 170px;
+  padding: 10px 20px;
+  width: 130px;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 12px;
   background-color: #2196f3;
   color: white;
   cursor: pointer;
@@ -37,6 +38,9 @@
 .row {
   display: flex;
 
+}
+.jrk{
+  margin-left: 110px;
 }
 
 .s {
@@ -57,9 +61,22 @@
     width: 500px;
     height: 50px;
     border-radius: 15px;
-    border: 1px solid #000000;
+    border: 2px solid #ccc;
     font-size: 20px;
     padding-left: 10px;
+}
+
+textarea {
+  width: 514px;
+  height: 150px;
+  margin-left: 50px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: #ffffff;
+  font-size: 16px;
+  resize: none;
 }
 
 .btn2{

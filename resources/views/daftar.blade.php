@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="/fontawesome/css/all.css">
     <link  rel="stylesheet" href="/css/daftar.css">
+    <link  type="text/css" rel="stylesheet" href="/css/font.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <div class="daftar">
               
                 <input id="file-input" class="file-input" type="file">
-                <img id="uploaded-image" class="uploaded-image" src="" alt="">
+                <img id="uploaded-image" class="uploaded-image"  alt="">
                 <label for="file-input" class="file-label">
                     <p>Aplod Picture Anda</p></label>
             </div>
@@ -26,7 +27,7 @@
         
 
 
-            <div>
+            <div class="jrk">
                 <div>
                     <p class="s">Nama Lengkap</p>
                     <input class="input1" type="text" >
@@ -38,18 +39,35 @@
                 </div>
         
                 <div>
-                    <p class="p">Fortofolio</p>
+                    <p class="p">Biaya Perbulan</p>
                     <input class="input1" type="text" >
                     
                 </div>
                 <div>
-                    <p class="p">Pengalaman Mengajar</p>
+                    <p class="p">Lama Mengajar Perhari</p>
                     <input class="input1" type="text" >
                 </div>
         
                 <div>
+                    <p class="p">Portofolio</p>
+                    <input class="input1" type="text" >
+                </div>
+
+                <div>
+                    <p class="p">Rekening</p>
+                    <input class="input1" type="number" >
+                </div>
+
+                <div>
                     <p class="p">Alamat</p>
                     <input class="input1" type="text" >
+                </div>
+
+                <div>
+                    <p class="p">Deskripsi</p>
+                    <textarea></textarea>
+
+
                 </div>
         
                 <div>

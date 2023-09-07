@@ -45,10 +45,10 @@
       </a>
       <div class="card1">
         <b>
-        Ceritakan kepada M. Amrol sedikit lebih banyak tentang<br>
-        kursus yang Anda cari, kapan ketersediaan Anda, dil. Semakin<br>
-        banyak informasi yang Anda berikan kepada guru anda,<br>
-        semakin besar kemungkinan mereka akan<br> menerima permintaan Anda.
+        Ceritakan kepada M. Amrol sedikit lebih banyak tentang
+        kursus yang Anda cari, kapan ketersediaan Anda, dil. Semakin
+        banyak informasi yang Anda berikan kepada guru anda,
+        semakin besar kemungkinan mereka akan menerima permintaan Anda.
       </b>
       </div>
     </div>
@@ -62,9 +62,9 @@
         <div class="row3">
         <div class="card2">
           <div class="button-container1">
-            <button class="button">Anda</button>
+            <a class="btn">Anda</a>
             <br>
-            <button class="button">Orang Lain</button>
+            <a class="btn">Orang Lain</a>
           </div>
         </div>
         <input type="text" class="text-box" placeholder="Masukkan nama depan ...">
@@ -77,10 +77,11 @@
         <div class="row4">
         <div class="card3">
           <div class="button-container2">
-            <button class="button2">Secepatnya</button>
+            <a class="btn2">Secepatnya</a>
             <br>
-            <button class="button2">Ajukan Tanggal</button>
+            <a class="btn2">Ajukan Tanggal</a>
           </div>
+
         </div>
         <input type="date" class="date-input">
       </div>
@@ -115,6 +116,34 @@
     
 
   </div>
+
+  <script>
+
+  const buttons1 = document.querySelectorAll('.button-container1 .btn');
+  const buttons2 = document.querySelectorAll('.button-container2 .btn2');
+
+  buttons1.forEach(function(button) {
+    button.addEventListener('click', function() {
+      buttons1.forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    });
+  });
+
+  buttons2.forEach(function(button) {
+    button.addEventListener('click', function() {
+      buttons2.forEach(function(btn) {
+        btn.classList.remove('active');
+      });
+      button.classList.add('active');
+    });
+  });
+
+
+
+
+  </script>
 
 </body>
 </html>

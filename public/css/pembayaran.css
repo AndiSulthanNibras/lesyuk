@@ -1,5 +1,6 @@
 .body {
   background-color: #F2FBFF;
+
 }
 
 .card {
@@ -72,12 +73,7 @@
     /* margin-bottom: 20px; */
 }
 
-.card p1 {
-    margin-left: 95px;
-    font-size: 25px;
-    font-weight: bold;
 
-}
 
 .tarif {
     margin-top: 20px;
@@ -123,6 +119,7 @@
   align-items: center;
   padding: 15px;
   width: 635px;
+  height: 210px;
 }
 
 .row1 {
@@ -178,9 +175,13 @@
   justify-content: space-between;
 }
 
-.button {
+.btn {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   width: 120px;
   height: 40px;
+  font-size: 12px;
   background-color: #ffffff;
   color: #000000;
   font-weight: bold;
@@ -190,11 +191,18 @@
   transition: background-color 0.3s ease;
 }
 
-.button:hover,
-.button:focus {
+.btn:hover {
   background-color: #ED6435;
-  color: #fff;
+  color: #ffffff;
 }
+
+.btn.active {
+  background-color: #ED6435;
+  color: #ffffff;
+}
+
+
+
 
 
 
@@ -245,7 +253,6 @@
 
 .row4 {
   display: flex;
-
 }
 .card3 {
   width: 270px;
@@ -261,12 +268,16 @@
   justify-content: space-between;
 }
 
-.button2 {
+.btn2 {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
   width: 120px;
   height: 40px;
   background-color: #ffffff;
   color: #000000;
   font-weight: bold;
+  font-size: 12px;
   border: 1px solid #000000;
   border-radius: 10px;
   cursor: pointer;
@@ -275,10 +286,14 @@
 
 
 
-.button2:hover,
-.button2:focus {
+.btn2:hover {
   background-color: #ED6435;
-  color: #fff;
+  color: #ffffff;
+}
+
+.btn2.active {
+  background-color: #ED6435;
+  color: #ffffff;
 }
 
 

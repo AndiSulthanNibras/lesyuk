@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('nav.nav')
         <div class="card">
             <div class="row">
                 <div>
@@ -24,7 +25,7 @@
             
                             <div class="mrgn-email">
                                 <p class="nama">Email</p>
-                                <p class="box-nama">@sjkdvb</p>
+                                <p class="box-nama">@alan.gmail.com</p>
                             </div>
                             
                         </div>
@@ -36,8 +37,8 @@
                                 </div>
                 
                                 <div class="mrgn-email">
-                                    <p class="nama">Alamat</p>
-                                    <p class="box-nama">Kudus</p>
+                                    <p class="nama">Nomer HP</p>
+                                    <p class="box-nama">0896532754</p>
                                 </div>
                           
                         </div>
@@ -46,13 +47,13 @@
                        
                     </div>
                     <div class="desc">
-                        <p class="des1">Description:</p>
+                        <p class="des1">Tentang diri anda:</p>
                         <p class="des2">Aku adalah yin dan tidak akan pernah berubah apapun yang terjadi.
                             Dexter ada kabar bahwa teman ku adalah seorang gadis yang imut.</p>
                     </div>
                     <div class="row">
                         <a class="button">Edit</a>
-                        <a class="button1">Logout</a>
+
                     </div>
                 </div>
                 
@@ -67,5 +68,6 @@
         </div>
 
     
-    
+        @include('nav.footer')
+
 </body>

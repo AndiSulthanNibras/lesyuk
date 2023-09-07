@@ -15,9 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index', function () {
-    return view('index');
+Route::get('/outdaftar', function () {
+    return view('outdaftar');
 });
+
+Route::get('/lesdaftar', function () {
+    return view('lesdaftar');
+});
+
 
 Route::get('/bayar', function () {
     return view('bayar');
@@ -36,6 +41,10 @@ Route::get('/detailguru', function () {
 
 Route::get('/daftar', function () {
     return view('daftar');
+});
+
+Route::get('/footer', function () {
+    return view('nav.footer');
 });
 
 Route::get('/listteacher', function () {
